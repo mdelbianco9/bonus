@@ -1,0 +1,74 @@
+* body {
+	margin: 0;
+}
+
+/*-- Sets the size, color and position of the nav bar --*/
+nav {
+	background-color: rgb(53, 45, 47);
+	height: 50px;
+	position: fixed;
+	width: 100%;
+}
+
+/*-- Creates, positions & styles the red box with ME TRO in it --*/
+nav p {
+	color: rgb(250, 250, 250);
+	font-family: sans-serif;
+	/* -- makes a box around text only, instea of whole width of nav --*/
+	display: inline-block;
+	padding: 7px 8px 7px 8px;
+	/* --sets the p inside the nav box automatically --*/
+	margin: auto;
+	margin-left: 10%;
+	background-color: rgb(246, 60, 60);
+	text-align: center;
+	font-weight: 300;
+}
+
+/*-- Changes color of icon ME TRO --*/
+nav p:hover {
+	cursor: pointer;
+	color: rgb(53, 45, 47);
+}
+
+/*-- Positions the ul inside of nav, top padding pushes li's down --*/
+nav ul {
+	float: right;
+	width: 55%;
+	margin: 0 auto;
+	height: 50px;
+	padding-top: 15px;
+}
+
+/*-- Borders for the Home button --*/
+.home {
+	border-bottom: 3px solid rgb(250, 250, 250);
+	border-right: 3px solid rgb(250, 250, 250);
+}
+
+/*-- Alignment for the li items in nav ul --*/
+nav li {
+	display: inline;
+	padding: 13px 20px;
+	margin: 0;
+}
+
+/*-- Gives li elements a bottom border when hovered --*/
+li:hover {
+	border-bottom: 3px solid rgb(250, 250, 250);
+	cursor: pointer;
+}
+
+/*-- Turns letters red when hovered on --*/
+a:hover {
+	color: rgb(246, 60, 60);
+}
+
+/*-- Styles the text in the nav bar --*/
+nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 15px;
+	font-family: sans-serif;
+	font-weight: 500;
+}
