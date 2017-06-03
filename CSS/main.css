@@ -1,5 +1,8 @@
-* body {
+* {
 	margin: 0;
+	border: 0;
+	outline: none;
+	padding: none;
 }
 
 /*-- Sets the size, color and position of the nav bar --*/
@@ -8,6 +11,7 @@ nav {
 	height: 50px;
 	position: fixed;
 	width: 100%;
+	top: 0;
 }
 
 /*-- Creates, positions & styles the red box with ME TRO in it --*/
@@ -17,12 +21,13 @@ nav p {
 	/* -- makes a box around text only, instea of whole width of nav --*/
 	display: inline-block;
 	padding: 7px 8px 7px 8px;
-	/* --sets the p inside the nav box automatically --*/
+	 /*--sets the p inside the nav box automatically --*/
 	margin: auto;
 	margin-left: 10%;
 	background-color: rgb(246, 60, 60);
 	text-align: center;
 	font-weight: 300;
+	position: fixed;
 }
 
 /*-- Changes color of icon ME TRO --*/
@@ -32,7 +37,7 @@ nav p:hover {
 }
 
 /*-- Positions the ul inside of nav, top padding pushes li's down --*/
-nav ul {
+.navbar {
 	float: right;
 	width: 55%;
 	margin: 0 auto;
@@ -47,7 +52,7 @@ nav ul {
 }
 
 /*-- Alignment for the li items in nav ul --*/
-nav li {
+.navbar li {
 	display: inline;
 	padding: 13px 20px;
 	margin: 0;
@@ -65,10 +70,16 @@ a:hover {
 }
 
 /*-- Styles the text in the nav bar --*/
-nav a {
+.navbar a {
 	text-decoration: none;
 	color: #fff;
 	font-size: 15px;
 	font-family: sans-serif;
 	font-weight: 500;
+}
+
+div {
+	background-color: red;
+	height: 700px;
+	width: 100%
 }
